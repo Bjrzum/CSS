@@ -1,0 +1,58 @@
+@import "reset";
+@import "globals";
+@import "colors";
+
+body {
+}
+
+@mixin boxColor($color) {
+  background-color: $color;
+}
+
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid $black;
+    padding: 1em;
+}
+
+.box1{
+    @include boxColor($red);
+}
+
+.box2{
+    @include boxColor($green);
+}
+
+.box3{
+    @include boxColor($blue);
+}
+
+.box4{
+    @include boxColor($yellow);
+}
+
+.box5{
+    @include boxColor($orange);
+}
+
+.box6{
+    @include boxColor($purple);
+}
+
+.box7{
+    @include boxColor($pink);
+}
+
+.box8{
+    @include boxColor($brown);
+}
+
+.box9{
+    @include boxColor($black);
+}
+
+.box10{
+    @include boxColor($white);
+}
